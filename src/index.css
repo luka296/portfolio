@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  background: #0C0C0C;
+  font-family: 'Kanit', sans-serif;
+  color: #ffffff;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #BBCCD7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom Services Card Hover Effects */
+.service-number {
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: color 0.3s ease;
+}
+.group:hover .service-number {
+  color: #B501A7 !important;
+}
+
+.service-title {
+  color: #ffffff !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.group:hover .service-title {
+  color: #B501A7 !important;
+}
+
+.service-desc {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease;
+}
